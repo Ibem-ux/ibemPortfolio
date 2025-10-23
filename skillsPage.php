@@ -89,7 +89,7 @@
 <body>
     <header>
         <?php include 'profPopUp.php'; ?>
-        <a href="mainPage.html" class="logo">Ibem</a>
+        <a href="mainPage.php" class="logo">Ibem</a>
         
         <nav>
             <a href="mainPage.php">Home</a>
