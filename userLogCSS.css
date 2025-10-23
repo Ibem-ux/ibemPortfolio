@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === Background === */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000; /* black like mainPage/projectPage */
+}
+
+/* === Form Containers === */
+.container {
+  display: none;
+  background: #0d0d0d; /* deep dark gray to pop from background */
+  border: 1px solid #00ff66;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.25);
+  padding: 35px 30px;
+  width: 340px;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+/* Show only the active form */
+.container.active {
+  display: block;
+}
+
+/* Subtle hover glow */
+.container:hover {
+  box-shadow: 0 0 10px #00ff66;
+}
+
+/* === Titles === */
+.form-title {
+  color: white !important; /* force white like in mainPage */
+  font-size: 4rem !important; /* match the 'Hello' text size */
+  font-weight: 800 !important;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+/* === Input Fields === */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #0c0c0c;
+  border: 1px solid #00ff66;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+
+.input-group:hover {
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.input-group i {
+  color: #00ff66;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.input-group input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.input-group input::placeholder {
+  color: #888;
+}
+
+/* === Recover Password === */
+.recover {
+  text-align: right;
+  margin-bottom: 10px;
+}
+/* === Buttons === */
+.btn {
+  background: #24fa41b4;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #00ff66;
+  color: black;
+  transform: translateY(-2px);
+}
+
+/* === Links and Toggle Buttons === */
+.link {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.link p {
+  margin-bottom: 6px;
+}
+
+.link button {
+  border: none;
+  background: none;
+  color: #00ff66;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.link button:hover {
+  color: white;
+  text-shadow: 0 0 5px #00ff66;
+}
+/* 3D Rotating Card Animation */
+body {
+  perspective: 1000px; /* adds 3D depth for animation */
+}
+
+.card {
+  position: relative;
+  width: 340px;
+  height: 480px; /* adjust based on your form height */
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Back side (Sign Up form) */
+#signUp {
+  transform: rotateY(180deg);
+}
+/* === Responsive Fixes === */
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+    padding: 25px 20px;
+  }
+  .form-title {
+    font-size: 1.5rem;
+  }
+}
