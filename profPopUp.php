@@ -1,5 +1,4 @@
 <?php
-// ✅ Always start session before any HTML or output
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
