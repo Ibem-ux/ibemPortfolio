@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'connect.php';
+include '../config/connect.php';
 
 // --- SIGN UP SECTION ---
 if (isset($_POST['signup'])) {
@@ -17,14 +17,14 @@ if (isset($_POST['signup'])) {
     $result = mysqli_query($conn, $checkEmail);
 
     if (mysqli_num_rows($result) > 0) {
-        echo "<script>alert('Email already exists! Please use another.'); window.location.href='index.php';</script>";
+        echo "<script>alert('Email already exists! Please use another.'); window.location.href='../index.php';</script>";
         exit();
     } else {
         // Insert new user
         $insertQuery = "INSERT INTO users (firstName, lastName, email, password)
                         VALUES ('$firstName', '$lastName', '$email', '$hashedPassword')";
         if (mysqli_query($conn, $insertQuery)) {
-            echo "<script>alert('Registration successful! You may now log in.'); window.location.href='index.php';</script>";
+            echo "<script>alert('Registration successful! You may now log in.'); window.location.href='../index.php';</script>";
             exit();
         } else {
             echo "Error: " . mysqli_error($conn);
@@ -54,7 +54,7 @@ if (isset($_POST['signin'])) {
         header("Location: mainPage.php");
         exit();
     } else {
-        echo "<script>alert('Incorrect email or password!'); window.location.href='index.php';</script>";
+        echo "<script>alert('Incorrect email or password!'); window.location.href='../index.php';</script>";
         exit();
     }
 }

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="userLogCSS.css" />
+  <link rel="stylesheet" href="assets/css/userLogCSS.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="icon" type="image/png" href="images/ibemFavicon.png" />
+  <link rel="icon" type="image/png" href="../images/ibemFavicon.png" />
   <title>Login</title>
 </head>
 
@@ -14,7 +14,7 @@
     <!-- SIGN IN FORM -->
     <div class="container active" id="signIn">
       <h1 class="form-title">Sign In</h1>
-      <form method="post" action="register.php">
+      <form method="post" action="website/register.php">
         <div class="input-group">
           <i class="fas fa-envelope"></i>
           <input type="email" name="email" placeholder="Email" required>
@@ -35,7 +35,7 @@
     <!-- SIGN UP FORM -->
     <div class="container" id="signUp">
       <h1 class="form-title">Register</h1>
-      <form method="post" action="register.php">
+      <form method="post" action="website/register.php">
         <div class="input-group">
           <i class="fas fa-user"></i>
           <input type="text" name="fName" placeholder="First Name" required />

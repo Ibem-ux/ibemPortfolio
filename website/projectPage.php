@@ -2,16 +2,16 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-include 'config/config.php';
+include '../config/config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ibemCss.css">
+    <link rel="stylesheet" href="../assets/css/ibemCss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="images/ibemFavicon.png">
+    <link rel="icon" type="image/png" href="../images/ibemFavicon.png">
     <title>Projects</title>
 
     <style>
@@ -205,7 +205,7 @@ include 'config/config.php';
 </head>
 <body>
     <header>
-        <?php include 'profPopUp.php'; ?>
+        <?php include 'components/profPopUp.php'; ?>
         <a href="mainPage.php" class="logo">Ibem</a>
         <nav>
             <a href="mainPage.php">Home</a>
@@ -254,7 +254,7 @@ include 'config/config.php';
     <script>
         // Load all projects
         function loadProjects() {
-            fetch("fetch_project.php")
+            fetch("../admin/controller/fetch_project.php")
                 .then(res => res.json())
                 .then(data => {
                     const postList = document.getElementById("postList");
@@ -270,7 +270,7 @@ include 'config/config.php';
                         if (proj.pinned === 1) div.classList.add("pinned");
 
                         div.innerHTML = `
-                            <img src="${proj.image_path ? proj.image_path : 'images/default.png'}" alt="Project Image">
+                          <img src="../${proj.image_path ? proj.image_path : 'uploads/default_project.png'}" alt="Project Image">
                             <div class="post-content">
                                 <div class="post-header">
                                     <h3>${proj.title}</h3>
@@ -294,7 +294,7 @@ include 'config/config.php';
         // Toggle pin
         function togglePin(id, currentState) {
             const newState = currentState === 1 ? 0 : 1;
-            fetch("toggle_pin.php", {
+            fetch("../admin/controller/toggle_pin.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: `id=${id}&pinned=${newState}`
@@ -329,7 +329,7 @@ include 'config/config.php';
             e.preventDefault();
             const formData = new FormData(this);
 
-            fetch("add_project.php", {
+            fetch("../admin/controller/add_project.php", {
                 method: "POST",
                 body: formData
             })
@@ -351,7 +351,7 @@ include 'config/config.php';
         function deleteProject(id) {
             if (!confirm("Are you sure you want to delete this project?")) return;
 
-            fetch("delete_project.php", {
+            fetch("../admin/controller/delete_project.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: "id=" + id
@@ -385,7 +385,7 @@ include 'config/config.php';
             e.preventDefault();
             const formData = new FormData(this);
 
-            fetch("update_project.php", {
+            fetch("../admin/controller/update_project.php", {
                 method: "POST",
                 body: formData
             })

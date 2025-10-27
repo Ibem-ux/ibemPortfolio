@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ibemCss.css">
+    <link rel="stylesheet" href="../assets/css/ibemCss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="images/ibemFavicon.png">
+    <link rel="icon" type="image/png" href="../images/ibemFavicon.png">
     <title>HTML</title>
     <style>
         .htmlHomeIMG{
@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <?php include 'profPopUp.php'; ?>
+        <?php include 'components/profPopUp.php'; ?>
         <a href="mainPage.php" class="logo">Ibem</a>
         <nav>
             <<a href="mainPage.php">Home</a>
@@ -27,7 +27,7 @@
     </header>
     <section class="htmlHome">
         <div class="htmlHomeIMG">
-            <img src="images/htmlLogo.png">
+            <img src="../images/htmlLogo.png">
         </div>
         <div class="htmlHomeTEXT">
             <h1>What is <span>HTML</span>?</h1><br><br>

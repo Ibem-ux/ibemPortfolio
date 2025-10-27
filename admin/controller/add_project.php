@@ -1,5 +1,5 @@
 <?php
-include 'config/config.php';
+include '../../config/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = $_POST['title'] ?? '';
@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Create uploads folder if it doesn’t exist
-    $upload_dir = "uploads/";
+    $upload_dir = "../../uploads/";
     if (!is_dir($upload_dir)) {
         mkdir($upload_dir, 0777, true);
     }

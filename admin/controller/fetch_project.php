@@ -1,5 +1,5 @@
 <?php
-include 'config/config.php';
+include '../../config/config.php';
 
 // Fetch all projects — pinned ones first
 $sql = "SELECT id, title, description, image_path, pinned 
@@ -23,7 +23,7 @@ header('Content-Type: application/json');
 // Assign default image if missing
 foreach ($projects as &$project) {
     if (empty($project['image_path'])) {
-        $project['image_path'] = 'images/default_project.png';
+        $project['image_path'] = '../../images/default_project.png';
     }
 }
 

@@ -1,5 +1,5 @@
 <?php
-include 'config/config.php';
+include '../../config/config.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $id = $_POST['id'];
@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Update with optional new image
     if (!empty($_FILES['image']['name'])) {
         $image = $_FILES['image']['name'];
-        $target = "uploads/" . basename($image);
+        $target = "../../uploads/" . basename($image);
 
         if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
             $sql = "UPDATE projects SET title=?, description=?, image_path=? WHERE id=?";

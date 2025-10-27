@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ibemCss.css">
+    <link rel="stylesheet" href="../assets/css/ibemCss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="images/ibemFavicon.png">
+    <link rel="icon" type="image/png" href="../images/ibemFavicon.png">
     <title>Skills</title>
     <style>
         .banner{
@@ -50,7 +50,7 @@
             background: transparent;
         }
         .banner .model{
-            background-image:url(images/myLogo_blackBG.png);
+            background-image:url(../images/myLogo_blackBG.png);
             width: 100%;
             height: 75vh;
             position: absolute;
@@ -88,7 +88,7 @@
 </head>
 <body>
     <header>
-        <?php include 'profPopUp.php'; ?>
+        <?php include 'components/profPopUp.php'; ?>
         <a href="mainPage.php" class="logo">Ibem</a>
         
         <nav>
@@ -100,12 +100,12 @@
     </header>
     <div class="banner">
         <div class="slider" style="--quantity: 6">
-            <div class="item" style="--position: 1"><a target="_blank" href="skillsHTML.php"><img src="images/NEWhtmlLogo.png"></a></div>
-            <div class="item" style="--position: 2"><a target="_blank" href="skillsCSS.php"><img src="images/NEWcssLogo.png" alt=""></a></div>
-            <div class="item" style="--position: 3"><a target="_blank" href="skillsJS.php"><img src="images/NEWjavascriptLogo.png" alt=""></a></div>
-            <div class="item" style="--position: 4"><a target="_blank" href="skillsPHP.php"><img src="images/NEWphpLogo.png"></a></div>
-            <div class="item" style="--position: 5"><a target="_blank" href="skillsC.php"><img src="images/NEWclogo.png" alt=""></a></div>
-            <div class="item" style="--position: 6"><a target="_blank" href="skillsJAVA.php"><img src="images/NEWjavaLogo.png" alt=""></a></div>
+            <div class="item" style="--position: 1"><a target="_blank" href="skillsHTML.php"><img src="../images/NEWhtmlLogo.png"></a></div>
+            <div class="item" style="--position: 2"><a target="_blank" href="skillsCSS.php"><img src="../images/NEWcssLogo.png" alt=""></a></div>
+            <div class="item" style="--position: 3"><a target="_blank" href="skillsJS.php"><img src="../images/NEWjavascriptLogo.png" alt=""></a></div>
+            <div class="item" style="--position: 4"><a target="_blank" href="skillsPHP.php"><img src="../images/NEWphpLogo.png"></a></div>
+            <div class="item" style="--position: 5"><a target="_blank" href="skillsC.php"><img src="../images/NEWclogo.png" alt=""></a></div>
+            <div class="item" style="--position: 6"><a target="_blank" href="skillsJAVA.php"><img src="../images/NEWjavaLogo.png" alt=""></a></div>
         </div>
         <div class="model"></div>
         </div>

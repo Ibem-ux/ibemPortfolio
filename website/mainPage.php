@@ -6,15 +6,15 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ibemCss.css">
+    <link rel="stylesheet" href="../assets/css/ibemCss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="images/ibemFavicon.png">
+    <link rel="icon" type="image/png" href="../images/ibemFavicon.png">
     <title>Website Portfolio</title>
     
 </head>
 <body>
     <header>
-        <?php include 'profPopUp.php'; ?>
+        <?php include 'components/profPopUp.php'; ?>
         <a href="mainPage.php" class="logo">Ibem</a>
         <nav>
             <a href="mainPage.php" class="active">Home</a>
@@ -25,7 +25,7 @@ session_start();
     </header>
     <section class="home">
         <div class="home-img">
-            <img src="images/myLogo_blackBG.png">
+            <img src="../images/myLogo_blackBG.png">
         </div>
         <div class="home-content">
             <h1>Hello, It's <span>Nhovem</span></h1>
