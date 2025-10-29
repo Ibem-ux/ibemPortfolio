@@ -217,7 +217,7 @@ include '../config/config.php';
 
     <main class="project-container">
         <section class="projects-list">
-            <h3><span>PROJECTS</span></h3>
+            <h3><span>PROJECTs</span></h3>
             <div id="postList"></div>
         </section>
 
@@ -404,6 +404,7 @@ include '../config/config.php';
         });
 
         window.onload = loadProjects;
+        
     </script>
 </body>
 </html>

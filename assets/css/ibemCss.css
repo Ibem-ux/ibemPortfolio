@@ -24,7 +24,8 @@ header{
     left:0;
     width:100%;
     padding:1rem 10%;
-    background:transparent;
+    background:rgb(0, 0, 0, 0.6);
+    backdrop-filter:blur(10px) saturate(180%);
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -184,3 +185,4 @@ h3{
         margin-left:10%;
         margin-top:5%;
 }
+
