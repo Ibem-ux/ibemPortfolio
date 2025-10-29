@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     }
 
-    // Create uploads folder if it doesn’t exist
+    // Create uploads folder if it doesnt exist
     $upload_dir = "../../uploads/";
     if (!is_dir($upload_dir)) {
         mkdir($upload_dir, 0777, true);
