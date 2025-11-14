@@ -86,7 +86,7 @@ if (session_status() === PHP_SESSION_NONE) {
             </form>';
   } else {
       echo '<p>Guest</p>';
-      echo '<a href="index.php" class="logout-btn">Login</a>';
+      echo '<a href="../../index.php" class="logout-btn">Login</a>';
   }
   ?>
 </div>
