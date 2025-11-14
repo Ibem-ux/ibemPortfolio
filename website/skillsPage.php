@@ -97,14 +97,14 @@
             <a href="projectPage.php">Project</a>
             <a href="aboutmePage.php">About Me</a>
         </nav>
-    </header>
+    </header> 
     <div class="banner">
         <div class="slider" style="--quantity: 6">
             <div class="item" style="--position: 1"><a target="_blank" href="skillsHTML.php"><img src="../images/NEWhtmlLogo.png" alt="HTML Logo"></a></div>
             <div class="item" style="--position: 2"><a target="_blank" href="skillsCSS.php"><img src="../images/NEWcssLogo.png" alt="CSS Logo"></a></div>
             <div class="item" style="--position: 3"><a target="_blank" href="skillsJS.php"><img src="../images/NEWjavascriptLogo.png" alt="JS Logo"></a></div>
             <div class="item" style="--position: 4"><a target="_blank" href="skillsPHP.php"><img src="../images/NEWphpLogo.png" alt="PHP Logo"></a></div>
-            <div class="item" style="--position: 5"><a target="_blank" href="skillsC.php"><img src="../images/NEWclogo.png" alt="C logo"></a></div>
+            <div class="item" style="--position: 5"><a target="_blank" href="skillsC.php"><img src="../images/clogo.png" alt="old C logo"></a></div>
             <div class="item" style="--position: 6"><a target="_blank" href="skillsJAVA.php"><img src="../images/NEWjavaLogo.png" alt="JAVA Logo"></a></div>
         </div>
         <div class="model"></div>
